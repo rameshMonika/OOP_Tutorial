@@ -1,0 +1,4 @@
+1. Write a short passage, describe what is Encapsulation in OOP. Illustrate it with
+an example of “Library (physical library where we go to borrow books)”.
+
+Encapsulation in OOP involves bundling data and methods within a class and restricting access to the object's internal state. In a Library example, it ensures that details of book storage and management are hidden. For instance, a Library class might encapsulate book data and methods like adding or displaying books. This protects internal details from external interference, promoting code maintainability and security.

@@ -1,0 +1,7 @@
+Provide an Exception example in the above Library illustration; describe it
+technically what is the type of this Exception (e.g. Compile-Time Exceptions or
+Run-Time Exceptions). Why it is essential in the Library system? What does it
+do?
+
+
+The exception used (LibraryFullException) in the provided example is a checked exception, which means it is checked at compile time. It's essential in the Library system to handle exceptional conditions, such as attempting to add a book to a full library. This specific exception helps maintain the integrity of the library's data and allows for graceful error handling, preventing potential issues like data corruption.
