@@ -5,5 +5,9 @@ public abstract class FrozenCharacter {
         this.name = name;
     }
 
+    public String getName() {
+        return name;
+    }
+
     public abstract char chooseGesture();
 }

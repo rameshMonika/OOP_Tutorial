@@ -1,12 +1,52 @@
+import java.util.Scanner;
 public class Elsa extends FrozenCharacter {
     public Elsa(String name) {
         super(name);
     }
 
-    @Override
+       @Override
     public char chooseGesture() {
-        // Implement Elsa's gesture selection logic
-        // For simplicity, let's say Elsa always chooses 'rock'
-        return 'r';
+        
+      
+        char[] gestures = {'p', 'r', 's'}; // p for paper, r for rock, s for scissors
+      
+
+        System.out.println("Enter a gesture (p for paper, r for rock, s for scissors): ");
+        char gestureChoosen = ' ';
+        boolean validGesture = false;
+
+        while (!validGesture) {
+            // get user input
+            Scanner scanner = new Scanner(System.in);   
+            String input = scanner.nextLine();
+            // check if the input is valid
+            if (input.length() == 1) {
+                char gesture = input.charAt(0);
+                // check if the gesture is in the array
+                for (char g : gestures) {
+                    if (g == gesture) {
+                        gestureChoosen = gesture;
+                        validGesture = true;
+                        break;
+                    }
+                }
+            }
+            if (!validGesture) {
+                System.out.println("Invalid gesture. Please enter a valid gesture (p, r, s): ");
+            }
+        }
+
+        System.out.println("Elsa chose: " + gestureChoosen);
+
+
+
+       
+
+        return gestureChoosen;
+
+        
+       
+      
     }
+
 }
