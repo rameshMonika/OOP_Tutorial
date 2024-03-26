@@ -7,12 +7,14 @@ public class Frozen {
 
         // Example usage:
         FrozenCharacter Elsa1 = new Elsa("Elsa");
+        FrozenCharacter Elsa2 = new Elsa("Elsa");
+
         FrozenCharacter Anna1 = new Anna("Anna");
         FrozenCharacter Olaf1 = new Olaf("Olaf");
         FrozenCharacter Kristoff1 = new Kristoff("Kristoff");
 
         // store the characters in an array
-        FrozenCharacter[] characters = {Elsa1, Anna1, Olaf1, Kristoff1};
+        FrozenCharacter[] characters = {Elsa1,Elsa2, Anna1, Olaf1, Kristoff1};
 
         // point system for firstPlayer and secondPlayer
 

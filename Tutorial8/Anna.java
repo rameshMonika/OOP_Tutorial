@@ -52,4 +52,10 @@ public class Anna extends FrozenCharacter {
       
     }
 
+    //   @Override
+    // public char chooseGesture(char playerChoice) {
+    //     // Implement the behavior for program-controlled players
+    //     return playerChoice;
+    // }
+
 }

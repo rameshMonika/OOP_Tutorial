@@ -10,4 +10,12 @@ public abstract class FrozenCharacter {
     }
 
     public abstract char chooseGesture();
+
+  
+
+    // // Overloaded chooseGesture method for program-controlled players
+    // public char chooseGesture(char playerChoice) {
+    //     return playerChoice;
+    // }
+
 }
