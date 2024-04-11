@@ -4,6 +4,7 @@ import java.awt.*;
 
     public class MyFrame {
 
+        
         public MyFrame(){
 
             JFrame f1=new JFrame();
@@ -73,6 +74,32 @@ import java.awt.*;
             // Slider 
             JSlider mySlider = new JSlider (0,100,3);
             f1.add(mySlider);
+
+
+        //create a submit button
+
+        JButton submitButton = new JButton("Submit");
+        f1.add(submitButton);
+
+        // on click of the submit button get the text from the text field
+        submitButton.addActionListener(e -> {
+            String text = myTextField.getText();
+            System.out.println("Text from the text field: " + text);
+            // show the result in a dialog box
+            JOptionPane.showMessageDialog(f1, "Text from the text field: " + text);
+        });
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
