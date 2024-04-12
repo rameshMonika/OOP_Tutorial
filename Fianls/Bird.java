@@ -2,8 +2,11 @@
 public class Bird extends Animal implements behavior{
 
     public Bird(String name, int age, String health_status) {
-        super(name, age, health_status);
+        super(name, age, health_status, new Habitat("Land"));
+        
     }
+
+    
 
     private String feather_color;
 

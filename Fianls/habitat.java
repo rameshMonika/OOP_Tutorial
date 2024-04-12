@@ -1,13 +1,20 @@
+public class Habitat {
 
-
-public interface habitat {
-
-    // include type of environment like jungle, aviary and aquatic
     public String environment;
-    public String getEnvironment();
-    public void setEnvironment(String environment);
 
-    public void simulate_habitat();
+    public Habitat(String environment) {
+        this.environment = environment;
+    }
+
+    public String getEnvironment() {
+        return this.environment;
+    }
+
+
+
+    public void simulateEnvironment() {
+        System.out.println("Simulating " + this.environment + " environment.");
+    }
 
     
 }

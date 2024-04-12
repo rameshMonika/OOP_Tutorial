@@ -8,7 +8,7 @@
 public class Mammal extends Animal implements behavior {
 
     public Mammal(String name, int age, String health_status) {
-        super(name, age, health_status);
+        super(name, age, health_status, new Habitat("Land"));
     }
     private String fur_color;
     

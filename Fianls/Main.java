@@ -3,6 +3,8 @@
 public class Main {
 
     public static void main(String[] args) {
+
+       
      
         Mammal dog = new Mammal("Dog", 10, "Good");
         dog.feed();
@@ -10,6 +12,8 @@ public class Main {
         dog.make_sound();
         dog.mammal_specific_method();
         dog.perform_behaviour();
+     
+       
 
         Reptile snake = new Reptile("Snake", 5, "Good");
         snake.feed();
@@ -21,6 +25,7 @@ public class Main {
         parrot.make_sound();
         parrot.layEgg();
         parrot.bird_specific_method();
+        
 
 
 
