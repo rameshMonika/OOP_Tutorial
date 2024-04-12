@@ -1,3 +1,6 @@
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 import javax.swing.*;
@@ -22,6 +25,12 @@ public class Frozen {
                 f.setLayout(null);
 
                 // create a text field for anna to enter her moves
+                //create combo box to choose between r, p and s
+           
+
+
+
+
                 JTextField anna = new JTextField();
                 anna.setBounds(200, 100, 120, 50);
                 f.add(anna);
@@ -54,20 +63,34 @@ public class Frozen {
 
                         for (int y = 0; y < input_split.length / 2; y++) {
                             System.out.println("\nRound " + (y + 1));
-                            setAction(player_1, null, input_split[y * 2]);
-                            setAction(null, player_2, input_split[y * 2 + 1]);
+                            setAction(player_1, null, text);
+                            setAction(null, player_2, text2);
                             CheckWinner(player_1, player_2);
                         }
 
-                        // convert the result of the gameWinner function to a string
 
                         
 
                          GameWinner(player_1, player_2);
                         // dialog box to show the result of the game
                         JOptionPane.showMessageDialog(f, "Elsa: " + player_1.getPoint() + " Anna: " + player_2.getPoint());
+                        try (//create a txt file to store the result of the game
+                        BufferedWriter writer = new BufferedWriter(new FileWriter("result.txt"))) {
+                            writer.write("Elsa: " + player_1.getPoint() + " Anna: " + player_2.getPoint());
+                            writer.close();
+                        } catch (IOException e1) {
+                            // TODO Auto-generated catch block
+                            e1.printStackTrace();
+                        }
+                        // write the result of the game to the txt file
                         // return result of the value winner from GameWinner method
                         resultLabel.setText(GameWinner(player_1, player_2));
+
+                       
+
+
+
+
 
                       
 
