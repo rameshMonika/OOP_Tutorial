@@ -1,10 +1,6 @@
 
 
 
-package Fianls;
-
-
-
 
 
 
@@ -29,11 +25,11 @@ public class Mammal extends Animal implements behavior {
     }
 
     public void mammal_specific_method(){
-        System.out.println(this.getName() + " specific method");
+        System.out.println( this.getName()+" specific method");
     }
 
     public void perform_behaviour(){
-        System.out.println(this.getName() + " is performing behaviour for mammals");
+        System.out.println( this.getName()+" is performing behaviour for mammals");
     }
     
 }
