@@ -29,7 +29,7 @@ public class Mammal extends Animal implements behavior {
     }
 
     public void perform_behaviour(){
-        System.out.println( this.getName()+" is performing behaviour for mammals");
+        System.out.println( this.getName()+" is performing behaviour for mammals walk or run");
     }
 
   

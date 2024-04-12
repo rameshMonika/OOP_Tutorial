@@ -19,7 +19,7 @@ public class Bird extends Animal implements behavior{
     }
 
     public void perform_behaviour(){
-        System.out.println(this.getName() + " is performing behaviour for birds");
+        System.out.println(this.getName() + " is performing behaviour for birds flys");
     }
     
 }

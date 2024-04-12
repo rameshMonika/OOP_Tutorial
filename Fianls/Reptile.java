@@ -19,7 +19,7 @@ public class Reptile extends Animal implements behavior{
     }
 
     public void perform_behaviour(){
-        System.out.println(this.getName() + " is performing behaviour for reptiles");
+        System.out.println(this.getName() + " is performing behaviour for reptiles swin or walk");
     }
     
 }
